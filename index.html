@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>whtjsal52 | Portfolio</title>
+  <meta name="description" content="whtjsal52의 개인 포트폴리오">
+  <style>
+    :root { --ink:#17211f; --paper:#f6f3ec; --lime:#d7f36a; --muted:#60706b; }
+    * { box-sizing:border-box; }
+    body { margin:0; font-family:Arial, "Apple SD Gothic Neo", sans-serif; color:var(--ink); background:var(--paper); }
+    a { color:inherit; }
+    .wrap { max-width:1040px; margin:auto; padding:24px; }
+    nav { display:flex; justify-content:space-between; align-items:center; padding:12px 0 54px; font-weight:700; }
+    .tag { background:var(--ink); color:#fff; padding:8px 12px; border-radius:999px; font-size:14px; }
+    .hero { min-height:60vh; display:grid; align-content:center; gap:24px; }
+    h1 { margin:0; font-size:clamp(56px,10vw,126px); letter-spacing:-.08em; line-height:.88; max-width:880px; }
+    h1 em { font-style:normal; background:var(--lime); padding:0 .08em; }
+    .lead { max-width:570px; font-size:20px; line-height:1.6; color:var(--muted); }
+    .button { display:inline-block; width:max-content; padding:14px 20px; background:var(--ink); color:#fff; text-decoration:none; border-radius:8px; font-weight:700; }
+    section { border-top:1px solid #b8c1bc; padding:64px 0; }
+    h2 { margin:0 0 28px; font-size:14px; text-transform:uppercase; letter-spacing:.12em; }
+    .about { display:grid; grid-template-columns:1fr 2fr; gap:32px; }
+    .about p { margin:0; font-size:clamp(25px,4vw,45px); letter-spacing:-.04em; line-height:1.12; }
+    .cards { display:grid; grid-template-columns:repeat(3,1fr); gap:16px; }
+    .card { min-height:180px; border-radius:16px; padding:22px; background:#fff; display:flex; flex-direction:column; justify-content:space-between; }
+    .card:nth-child(2) { background:var(--lime); }
+    .card span { font-size:13px; color:var(--muted); }
+    .card strong { font-size:23px; letter-spacing:-.04em; }
+    footer { display:flex; justify-content:space-between; gap:24px; padding:30px 0 10px; color:var(--muted); font-size:14px; }
+    @media (max-width:640px) { .wrap { padding:18px; } nav { padding-bottom:42px; } .about, .cards { grid-template-columns:1fr; } section { padding:46px 0; } footer { flex-direction:column; } }
+  </style>
+</head>
+<body>
+  <main class="wrap">
+    <nav><span>whtjsal52</span><span class="tag">OPEN TO WORK</span></nav>
+    <section class="hero">
+      <h1>만들고,<br><em>배우고,</em><br>연결합니다.</h1>
+      <p class="lead">안녕하세요. 저는 아이디어를 실제 경험으로 바꾸는 것을 좋아하는 사람입니다. 이곳에서 작업과 배움을 기록합니다.</p>
+      <a class="button" href="https://github.com/whtjsal52">GitHub 방문하기 →</a>
+    </section>
+    <section class="about">
+      <h2>About</h2>
+      <p>호기심에서 시작해, 더 나은 디지털 경험을 만드는 데 집중합니다. 새로운 프로젝트와 협업을 언제나 환영합니다.</p>
+    </section>
+    <section>
+      <h2>What I do</h2>
+      <div class="cards">
+        <article class="card"><span>01</span><strong>웹 프로젝트</strong><span>아이디어를 웹으로 구현합니다.</span></article>
+        <article class="card"><span>02</span><strong>배움과 실험</strong><span>새로운 도구와 기술을 탐구합니다.</span></article>
+        <article class="card"><span>03</span><strong>함께 만들기</strong><span>좋은 사람들과 협업합니다.</span></article>
+      </div>
+    </section>
+    <footer><span>© 2026 whtjsal52</span><a href="https://github.com/whtjsal52">github.com/whtjsal52</a></footer>
+  </main>
+</body>
+</html>
